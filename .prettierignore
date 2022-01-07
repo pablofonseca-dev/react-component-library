@@ -1,3 +1,4 @@
+# Ignored Artifacts: 
 # Node artifact files
 node_modules/
 dist/

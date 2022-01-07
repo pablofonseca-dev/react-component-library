@@ -23,23 +23,31 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "clean": "prettier --write .",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "shared-config"
     ],
     "overrides": [
       {
         "files": [
-          "**/*.stories.*"
+          "**/*.stories.*",
+          "**/*.ts?(x)"
         ],
         "rules": {
-          "import/no-anonymous-default-export": "off"
+          "import/no-anonymous-default-export": "off",
+          "additional-typescript-only-rule": "warn"
         }
       }
     ]
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "browserslist": {
     "production": [
@@ -62,6 +70,9 @@
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.9",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.5",
+    "prettier": "2.5.1",
     "webpack": "^5.65.0"
   }
 }
