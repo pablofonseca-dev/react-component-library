@@ -1,0 +1,48 @@
+@use "../colors";
+@use "../_base";
+
+.btn {
+  border: 1px solid colors.$light-gray;
+  padding: 0.68em 1.25em;
+
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  &--rounded {
+    border-radius: 10px;
+  }
+
+  &--primary {
+    background-color: colors.$btn-primary;
+    border-color: colors.$btn-primary;
+    color: colors.$white;
+  }
+
+  &--secondary {
+    background-color: colors.$white;
+    border-color: colors.$light-gray;
+  }
+
+  &--small {
+    padding: 0.625em 1em;
+    font-size: 0.75em;
+  }
+
+  &--medium,
+  &--default {
+    padding: 0.6875em 1.25em;
+    font-size: 0.875em;
+  }
+
+  &--large {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+  }
+
+  &--success {
+    background-color: colors.$success;
+    border-color: colors.$success;
+    color: colors.$white;
+  }
+}
