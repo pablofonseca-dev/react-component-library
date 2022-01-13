@@ -1,0 +1,25 @@
+@use "../colors";
+
+.input {
+    padding: 0.6875em 2em 0.6875em 0.5em;
+    min-width: 15vw;
+    font-size: 0.875em;
+    display: block;
+    border: 1px solid colors.$light-gray;
+
+    &--large {
+        padding: 1em 10em 1em 0.5em;
+    }
+
+    &--small {
+        padding: 0.4em 2em 0.4em 0.5em;
+    }
+
+    &--error {
+        border-color: colors.$error;
+    }
+
+    &--rounded {
+        border-radius: 12px;
+    }
+}
