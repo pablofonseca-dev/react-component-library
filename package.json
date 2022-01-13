@@ -1,78 +1,78 @@
 {
-  "name": "react-component-library",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9",
-    "classnames": "^2.3.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "sass": "^1.47.0",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
-  },
-  "scripts": {
-    "start": "start-storybook -p 6006 -s public",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build-storybook": "build-storybook -s public",
-    "clean": "prettier --write .",
-    "prepare": "husky install"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*",
-          "**/*.ts?(x)"
+    "name": "react-component-library",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^12.0.0",
+        "@testing-library/user-event": "^13.2.1",
+        "@types/jest": "^27.0.1",
+        "@types/node": "^16.7.13",
+        "@types/react": "^17.0.20",
+        "@types/react-dom": "^17.0.9",
+        "classnames": "^2.3.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-scripts": "5.0.0",
+        "sass": "^1.47.0",
+        "typescript": "^4.4.2",
+        "web-vitals": "^2.1.0"
+    },
+    "scripts": {
+        "start": "start-storybook -p 6006 -s public",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "build-storybook": "build-storybook -s public",
+        "clean": "prettier --write .",
+        "prepare": "husky install"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
         ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
-    "@storybook/addon-links": "^6.4.9",
-    "@storybook/addons": "^6.4.10",
-    "@storybook/builder-webpack5": "^6.4.9",
-    "@storybook/manager-webpack5": "^6.4.9",
-    "@storybook/node-logger": "^6.4.9",
-    "@storybook/preset-create-react-app": "^4.0.0",
-    "@storybook/react": "^6.4.9",
-    "@storybook/theming": "^6.4.10",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.1.5",
-    "prettier": "2.5.1",
-    "webpack": "^5.65.0"
-  }
+        "overrides": [
+            {
+                "files": [
+                    "**/*.stories.*",
+                    "**/*.ts?(x)"
+                ],
+                "rules": {
+                    "import/no-anonymous-default-export": "off"
+                }
+            }
+        ]
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@storybook/addon-actions": "^6.4.9",
+        "@storybook/addon-essentials": "^6.4.9",
+        "@storybook/addon-links": "^6.4.9",
+        "@storybook/addons": "^6.4.10",
+        "@storybook/builder-webpack5": "^6.4.9",
+        "@storybook/manager-webpack5": "^6.4.9",
+        "@storybook/node-logger": "^6.4.9",
+        "@storybook/preset-create-react-app": "^4.0.0",
+        "@storybook/react": "^6.4.9",
+        "@storybook/theming": "^6.4.10",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.1.5",
+        "prettier": "2.5.1",
+        "webpack": "^5.65.0"
+    }
 }

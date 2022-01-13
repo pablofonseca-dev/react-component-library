@@ -3,5 +3,5 @@ import { themes } from "@storybook/theming";
 import myTheme from "./myTheme";
 
 addons.setConfig({
-  theme: myTheme,
+    theme: myTheme,
 });
