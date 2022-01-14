@@ -2,17 +2,20 @@
 
 .input {
     padding: 0.6875em 2em 0.6875em 0.5em;
-    min-width: 15vw;
     font-size: 0.875em;
-    display: block;
+    display: inline-block;
     border: 1px solid colors.$light-gray;
+    width: 100%;
+    padding: 1em 0em 1em 0.5em;
+    background: colors.$white;
+    line-height: 20px;
 
     &--large {
-        padding: 1em 10em 1em 0.5em;
+        padding: 1.5em 0em 1.5em 0.5em;
     }
 
     &--small {
-        padding: 0.4em 2em 0.4em 0.5em;
+        padding: 0.5em 0em 0.5em 0.5em;
     }
 
     &--error {
@@ -20,6 +23,7 @@
     }
 
     &--rounded {
-        border-radius: 12px;
+        border-radius: 4px;
+        box-shadow: rgb(0 0 0 / 10%) 0 0 0 1px inset;
     }
 }
