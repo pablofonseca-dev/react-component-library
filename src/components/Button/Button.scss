@@ -4,6 +4,7 @@
 .btn {
     border: 1px solid colors.$light-gray;
     padding: 0.68em 1.25em;
+    font-weight: 400;
 
     &:not(:disabled):not(.disabled) {
         cursor: pointer;
@@ -43,6 +44,41 @@
     &--success {
         background-color: colors.$success;
         border-color: colors.$success;
+    }
+
+    &--danger {
+        background-color: colors.$error;
+        border-color: colors.$error;
+    }
+
+    &--success,
+    &--danger,
+    &--dark {
         color: colors.$white;
+    }
+
+    &--warning {
+        background-color: colors.$warning;
+        border-color: colors.$warning;
+    }
+
+    &--info {
+        background-color: colors.$info;
+        border-color: colors.$info;
+    }
+
+    &--link {
+        background-color: colors.$white;
+        border-color: colors.$white;
+        color: colors.$btn-link;
+        text-decoration: underline;
+    }
+
+    &--light {
+        background-color: colors.$btn-light;
+    }
+
+    &--dark {
+        background-color: colors.$btn-dark;
     }
 }

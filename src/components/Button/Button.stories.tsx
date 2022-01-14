@@ -5,7 +5,22 @@ import Button from "./Button";
 export default {
     title: "Atoms/Button",
     component: Button,
-    argTypes: {},
+    argTypes: {
+        btnStyle: {
+            options: [
+                "primary",
+                "secondary",
+                "success",
+                "danger",
+                "warning",
+                "info",
+                "light",
+                "dark",
+                "link",
+            ],
+            control: { type: "select" },
+        },
+    },
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => (
@@ -13,7 +28,9 @@ const Template: ComponentStory<typeof Button> = (args) => (
 );
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+    btnStyle: "primary",
+};
 
 export const Secondary = Template.bind({});
 Secondary.args = {
@@ -35,7 +52,7 @@ Large.args = {
     size: "large",
 };
 
-export const Success = Template.bind({});
-Success.args = {
+export const Styled = Template.bind({});
+Styled.args = {
     btnStyle: "success",
 };
