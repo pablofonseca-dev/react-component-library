@@ -69,3 +69,6 @@ yarn-error.log*
 
 # vscode settings
 .vscode
+
+# testing react page
+src/TestingPage.tsx
